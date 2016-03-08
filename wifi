@@ -2,6 +2,8 @@ Terminal:
 
 ssh pi@192.168.1.102
 
+La contrasenya és: raspberry
+
 sudo nano /etc/network/interfaces
 
 ------
