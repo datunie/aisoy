@@ -1,0 +1,25 @@
+Terminal:
+
+ssh pi@192.168.1.102
+
+sudo nano /etc/network/interfaces
+
+------
+
+Per a aconseguir la contrasenya que s'ha de posar en la línia:
+wpa-psk "contraseña"
+
+Obrim un terminal i posem:
+$ wpa_passphrase "nombre-de-la-red" "contraseña"
+
+Tindrem:
+network={
+ssid="nombre-de-la-red"
+#psk="contraseña"
+psk=603cd83455207ea9d9b49f65f3810a0734ce5612834c3e8e3105d2fd3a649260
+}
+
+En aquest exemple, en la línia:
+wpa-psk "contraseña"
+hem de canviar "contraseña" per:
+603cd83455207ea9d9b49f65f3810a0734ce5612834c3e8e3105d2fd3a649260
