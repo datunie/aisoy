@@ -1,0 +1,10 @@
+auto lo
+iface lo inet loopback
+auto eth0
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+iface wlan0 inet dhcp
+	wpa-ssid XARXA_WIFI
+	wpa-psk e3e6f07fbde71807926f267a4191626790e46413925773df1270f24ceccc2ca7
+iface default inet dhcp
